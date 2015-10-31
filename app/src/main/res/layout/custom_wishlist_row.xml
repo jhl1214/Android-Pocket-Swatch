@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_background"
+        android:background="#5C5C5C">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:baselineAligned="false"
+            android:background="#686868"
+            android:gravity="center_vertical"
+            android:id="@+id/info_background">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="store name"
+                    android:id="@+id/storeName"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="store location"
+                    android:id="@+id/storeLocation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fiberImage"
+                android:src="@drawable/black11"
+                android:adjustViewBounds="false"
+                android:minHeight="180px"
+                android:minWidth="180px" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fiber name"
+                    android:id="@+id/fiberName"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fiber price"
+                    android:id="@+id/fiberPrice"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/curve_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/b1" />
+    </LinearLayout>
+</TableRow>

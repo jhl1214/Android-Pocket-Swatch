@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.dangercloz.SE.SE_FR_PocketDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20px" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView6"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/box1"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/pocket_name"
+                android:gravity="center"
+                android:textSize="35px"
+                android:layout_marginTop="23px"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/pocket_count"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="23px"
+                android:layout_marginRight="30px"
+                android:textSize="35px"
+                android:textColor="#000000" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:id="@+id/btn_close" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:overScrollMode="never"
+                android:id="@+id/scrollView3"
+                android:layout_marginTop="120px">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="88px"
+                    android:paddingRight="88px"
+                    android:id="@+id/item_holder" />
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="202px" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView11"
+                android:src="@drawable/pocket_down"
+                android:adjustViewBounds="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.dangercloz.BO.BO_FR_SearchTag"
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="89px"
+            android:layout_marginTop="96px"
+            android:background="@drawable/search_background">
+
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag_search_view"
+                android:iconifiedByDefault="false"
+                android:paddingRight="13dp"
+                android:paddingLeft="-8dp"
+                android:visibility="invisible"
+                android:queryHint="Tag"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_tag_search"
+                android:src="@drawable/hash_tag_seach"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:maxWidth="600px"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag_gridview"
+            android:background="#202323"
+            android:listSelector="#00000000"
+            android:textFilterEnabled="false"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:numColumns="auto_fit" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:background="#202323">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_marginRight="70px">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/selected_tag_bar">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_close_tag"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tag_close"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="50px"
+                    android:maxWidth="50px"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="20px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_tag_list"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arrow_up"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="110px" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_background"
+        android:background="#5C5C5C">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:baselineAligned="false"
+            android:background="#686868"
+            android:id="@+id/info_background">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="총 거래건수"
+                    android:id="@+id/orderTitle"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25px"
+                    android:layout_marginLeft="50px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 번"
+                    android:id="@+id/orderCount"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25px"
+                    android:layout_marginLeft="50px" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#000000"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px"></FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팩스번호"
+                    android:id="@+id/faxTitle"
+                    android:textSize="25px"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="50px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02-0000-0000"
+                    android:id="@+id/storeFax"
+                    android:textSize="25px"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginBottom="10px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fiberImage"
+                    android:src="@drawable/black11"
+                    android:adjustViewBounds="false"
+                    android:minHeight="180px"
+                    android:minWidth="180px" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="store name"
+                        android:id="@+id/storeName"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="store location"
+                        android:id="@+id/storeLocation"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="50px"
+                    android:gravity="right"
+                    android:id="@+id/btn_history"
+                    android:paddingTop="15px"
+                    android:paddingBottom="15px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32px"
+                        android:text="거래내역 조회"
+                        android:id="@+id/orderHistory"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px"
+                        android:gravity="center_vertical" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#000000"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50px"
+                    android:layout_marginLeft="30px"
+                    android:gravity="right"
+                    android:paddingTop="13px"
+                    android:paddingBottom="13px"
+                    android:layout_marginBottom="3px"
+                    android:id="@+id/btn_phonecall">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView26"
+                        android:src="@drawable/call_off"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="45px" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/curve_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/b1" />
+    </LinearLayout>
+</TableRow>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PocketSwatch</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bo__ac__main">BO_AC_Main</string>
+    <string name="title_activity_co__ac__create_db">CO_AC_CreateDB</string>
+    <string name="title_activity_se__ac__main">SE_AC_Main</string>
+    <string name="title_activity_dc__ac__main">DC_AC_Main</string>
+    <string name="title_activity_mi__ac__main">MI_AC_Main</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

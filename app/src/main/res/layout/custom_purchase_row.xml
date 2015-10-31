@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_background"
+        android:background="#5C5C5C">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:baselineAligned="false"
+            android:background="#686868"
+            android:id="@+id/info_background">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fname 0YD"
+                    android:id="@+id/fiberInfo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25px"
+                    android:layout_marginLeft="80px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0원"
+                    android:id="@+id/price"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25px"
+                    android:layout_marginLeft="80px" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#000000"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="14px"></FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상점 이름"
+                    android:id="@+id/storeName"
+                    android:textSize="25px"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="80px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위치"
+                    android:id="@+id/storeLocation"
+                    android:textSize="25px"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginBottom="10px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fiberImage"
+                    android:src="@drawable/black11"
+                    android:adjustViewBounds="false"
+                    android:minHeight="180px"
+                    android:minWidth="180px" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:gravity="center">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주문일자"
+                    android:id="@+id/textView32"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25px"
+                    android:layout_marginRight="80px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="날짜"
+                    android:id="@+id/purchaseDate"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23px"
+                    android:layout_marginRight="80px" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#000000"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50px"
+                    android:layout_marginLeft="30px"
+                    android:gravity="right"
+                    android:layout_marginBottom="3px"
+                    android:id="@+id/btn_cancel"
+                    android:clickable="true"
+                    android:paddingBottom="5px"
+                    android:paddingTop="5px">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView26"
+                        android:src="@drawable/purchase_cancel"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="55px" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/curve_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/b1" />
+    </LinearLayout>
+</TableRow>

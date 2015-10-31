@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.dangercloz.BO.BO_FR_PocketAll"
+    android:focusable="false"
+    android:clickable="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/pocket_table"
+            android:layout_gravity="center_horizontal"
+            android:shrinkColumns="*"
+            android:background="#202323"
+            android:paddingTop="20px">
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="202px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/pocket_down"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 스와치박스"
+                android:id="@+id/all_title"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="18px"
+                android:textSize="26px"
+                android:textColor="#3EB5B0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공유 스와치박스"
+                android:id="@+id/share_title"
+                android:layout_marginTop="18px"
+                android:textSize="26px"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="150px" />
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/all_textview"
+                android:textColor="#3EB5B0"
+                android:textSize="50px"
+                android:layout_marginLeft="180px"
+                android:gravity="center"
+                android:layout_marginTop="47px" />
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/share_textview"
+                android:textColor="#FFFFFF"
+                android:textSize="50px"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="180px"
+                android:layout_marginTop="47px" />
+
+            <FrameLayout
+                android:layout_width="300px"
+                android:layout_height="100px"
+                android:layout_marginLeft="80px"
+                android:id="@+id/btn_all"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="300px"
+                android:layout_height="100px"
+                android:layout_marginRight="80px"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_share" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

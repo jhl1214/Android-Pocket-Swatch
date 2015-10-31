@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fiber_view" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fiber_image"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:maxHeight="180px"
+            android:maxWidth="180px"
+            android:minHeight="100px"
+            android:minWidth="100px"
+            android:layout_gravity="center"
+            android:padding="10px" />
+    </FrameLayout>
+
+</LinearLayout>
